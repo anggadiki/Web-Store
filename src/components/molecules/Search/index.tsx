@@ -7,7 +7,7 @@ const Search = () => {
         id="search"
         name="search"
         placeholder="Apple Watch, Samsung S21, Macbook Pro, ..."
-        className=" bg-white text-lg w-full py-2 pl-6 rounded-xl placeholder:text-lg placeholder:font-medium"
+        className=" bg-white text-lg w-full py-2 pl-6 rounded-xl placeholder:text-lg placeholder:font-medium shadow-lg"
       />
     </div>
   );
