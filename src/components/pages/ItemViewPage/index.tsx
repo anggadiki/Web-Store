@@ -1,13 +1,13 @@
 import Navbar from "@/components/molecules/Nav";
 import Bag from "@/components/organismes/Bag";
-import Product from "@/components/templates/Product";
+import ProductDetail from "@/components/templates/ProductDetail";
 
-const DashboardPage = () => {
+const ItemViewPage = () => {
   return (
     <div className=" bg-[#EDEDED] grid grid-cols-12">
       <Navbar />
       <div className=" col-span-8">
-        <Product />
+        <ProductDetail />
       </div>
       <div className=" relative col-span-3">
         <Bag />
@@ -16,4 +16,4 @@ const DashboardPage = () => {
   );
 };
 
-export default DashboardPage;
+export default ItemViewPage;

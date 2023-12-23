@@ -1,5 +1,11 @@
-import DashboardPage from "@/components/pages/DashboardPage";
+import Link from "next/link";
 
 export default function Home() {
-  return <DashboardPage />;
+  return (
+    <div className=" flex min-h-screen font-mono justify-center items-center text-4xl font-semibold">
+      <Link href={"/dashboard"}>
+        <p className=" hover:text-red-700">Selamat Datang Di Store Kami</p>
+      </Link>
+    </div>
+  );
 }
