@@ -1,7 +1,10 @@
+"use client";
 import Botton from "@/components/molecules/Botton";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Bag = () => {
+  const pathname = usePathname();
   return (
     <>
       <div className="">
@@ -50,7 +53,7 @@ const Bag = () => {
           </div>
         </div>
         <div className=" w-full flex justify-center mt-10">
-          <Botton />
+          {pathname === "/bag" ? <Botton>Checkout</Botton> : <Botton />}
         </div>
       </div>
     </>
