@@ -4,7 +4,7 @@ const ShippingCard = () => {
       <div className="w-[871px] p-4">
         <p className=" text-3xl uppercase tracking-[0.2em]">Shipping Address</p>
         <div className=" flex items-start justify-between pt-4">
-          <div className=" text-xl flex flex-col gap-1">
+          <div className=" text-lg flex flex-col gap-1">
             <p> John Maker</p>
             <p> 123 Plae Grond Stret</p>
             <p> Vermont, California</p>
