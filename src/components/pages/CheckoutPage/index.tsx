@@ -1,3 +1,4 @@
+import OrderSummary from "@/components/organismes/OrderSummary";
 import CheckoutItem from "@/components/templates/CheckoutItems";
 
 const CheckoutPage = () => {
@@ -7,7 +8,7 @@ const CheckoutPage = () => {
         <CheckoutItem />
       </div>
       <div className=" col-span-4">
-        <p>heloo</p>
+        <OrderSummary />
       </div>
     </div>
   );
