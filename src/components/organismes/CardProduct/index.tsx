@@ -1,17 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const CardProduct = () => {
   return (
     <div className="">
-      <div className=" w-[191.36px] h-[232px] bg-white p-4 rounded-2xl">
-        <Image
-          src="/product.png"
-          alt="product"
-          width={191.36}
-          height={232}
-          className=" object-cover"
-        />
-      </div>
+      <Link href={"/dashboard/item"}>
+        <div className=" w-[191.36px] h-[232px] bg-white p-4 rounded-2xl">
+          <Image
+            src="/product.png"
+            alt="product"
+            width={191.36}
+            height={232}
+            className=" object-cover"
+          />
+        </div>
+      </Link>
       <div className=" p-2 font-cabin">
         <p className=" text-xl font-semibold text-[#1A1F16]">Apple Watch</p>
         <p className=" text-[#60695C]">Series 5 SE</p>
