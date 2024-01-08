@@ -1,4 +1,5 @@
 import Input from "@/components/molecules/Input";
+import Link from "next/link";
 
 const AddressForm = () => {
   return (
@@ -49,7 +50,9 @@ const AddressForm = () => {
           </button>
         </div>
         <div className=" w-full flex justify-between items-end">
-          <p className=" text-[#1A1F1680] underline">Back</p>
+          <Link href={"/checkout"}>
+            <p className=" text-[#1A1F1680] underline">Back</p>
+          </Link>
           <div className=" flex gap-2 items-end">
             <svg
               width="24"
