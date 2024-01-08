@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ShippingCard = () => {
   return (
     <div className=" w-full bg-white font-cabin rounded-xl">
@@ -10,9 +12,11 @@ const ShippingCard = () => {
             <p> Vermont, California</p>
             <p>United States of America</p>
           </div>
-          <button className=" border border-black px-6 py-2 rounded-xl">
-            Change
-          </button>
+          <Link href={"/checkout/add-addres"}>
+            <button className=" border border-black px-6 py-2 rounded-xl">
+              Change
+            </button>
+          </Link>
         </div>
       </div>
     </div>

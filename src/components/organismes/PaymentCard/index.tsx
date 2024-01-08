@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const PaymentCard = () => {
   return (
     <div className=" w-full font-cabin bg-white rounded-xl">
@@ -83,9 +85,11 @@ const PaymentCard = () => {
             </div>
           </div>
           <div className="">
-            <button className=" border border-black px-6 py-2 rounded-xl">
-              Change
-            </button>
+            <Link href={"/checkout/add-payment"}>
+              <button className=" border border-black px-6 py-2 rounded-xl">
+                Change
+              </button>
+            </Link>
           </div>
         </div>
       </div>
